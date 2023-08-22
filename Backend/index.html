@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TNF Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img
+              src="images/image-from-rawpixel-id-6588490-original.png"
+              alt=""
+            />
+            <h2>TNF</h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-symbols-rounded">close</span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-symbols-rounded">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">groups</span>
+            <h3>Players</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">paid</span>
+            <h3>Payments</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">event_available</span>
+            <h3>Attending</h3>
+            <span class="player-count">18</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">diversity_2</span>
+            <h3>Team Generator</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">settings</span>
+            <h3>Settings</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-rounded">logout</span>
+            <h3>Log Out</h3>
+          </a>
+        </div>
+      </aside>
+      <!-- end of aside -->
+      <main>
+        <h1>Dashboard</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+
+        <div class="insights">
+          <!-- confirmed players dashbaord -->
+          <div class="sales">
+            <span class="material-symbols-rounded">analytics</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total confirmed</h3>
+                <h2>18</h2>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>100%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Thursday 27th July</small>
+          </div>
+          <!-- end of confirmed -->
+
+          <!-- paid status dashboard -->
+          <div class="expenses">
+            <span class="material-symbols-rounded">bar_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Paid</h3>
+                <h2>18</h2>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>100%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Thursday 27th July</small>
+          </div>
+          <!-- end of paid status -->
+
+          <!-- resveres -->
+          <div class="income">
+            <span class="material-symbols-rounded">stacked_line_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Reserves</h3>
+                <h2>2</h2>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>100%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Thursday 27th July</small>
+          </div>
+          <!-- end of reserves -->
+        </div>
+        <!-- end of insights -->
+        <div class="recent-orders">
+          <h2>Recent Changes</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Date</th>
+                <th>Paid</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ben</td>
+                <td>26th July</td>
+                <td>Yes</td>
+                <td class="success">Paid</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Stokes</td>
+                <td>24th July</td>
+                <td>No</td>
+                <td class="warning">Confirmed</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Ander</td>
+                <td>24th July</td>
+                <td>Yes</td>
+                <td class="success">Paid</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Shaun</td>
+                <td>23rd July</td>
+                <td>Yes</td>
+                <td class="success">Paid</td>
+                <td class="primary">Details</td>
+              </tr>
+              <tr>
+                <td>Brendan</td>
+                <td>22nd July</td>
+                <td>Yes</td>
+                <td class="danger">Cancelled</td>
+                <td class="primary">Details</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#">Show All</a>
+        </div>
+      </main>
+      <!-- end of main -->
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-symbols-rounded">menu</span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-symbols-rounded active">light_mode</span>
+            <span class="material-symbols-rounded">dark_mode</span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>Ben</b></p>
+              <small class="text-muted">Admin</small>
+              <div class="profile-photo">
+                <img src="images/20230722_102936.jpg" alt="Profile photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of top -->
+
+        <div class="recent-updates">
+          <h2>Upcoming bookings</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img
+                  src="images/image-from-rawpixel-id-6588490-original.png"
+                  alt="profile photo recent updates"
+                />
+              </div>
+              <div class="message">
+                <p><b>3rd August</b> Booked and paid for on the big pitch.</p>
+                <small class="text-muted"> In 1 week</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img
+                  src="images/image-from-rawpixel-id-6588490-original.png"
+                  alt="profile photo recent updates"
+                />
+              </div>
+              <div class="message">
+                <p>
+                  <b>10th August</b> Booked but not paid for on the big ptich.
+                </p>
+                <small class="text-muted"> In 2 weeks</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img
+                  src="images/image-from-rawpixel-id-6588490-original.png"
+                  alt="profile photo recent updates"
+                />
+              </div>
+              <div class="message">
+                <p>
+                  <b>17th August</b> Booked but not paid for on the big pitch.
+                </p>
+                <small class="text-muted"> In 3 weeks</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of upcoming bookings -->
+        <div class="sales-analytics">
+          <h2>Account Balances</h2>
+          <div class="item tnf">
+            <div class="icon">
+              <span class="material-symbols-rounded">account_balance</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>TNF POT</h3>
+                <small class="text-muted">Updated</small>
+              </div>
+              <h5 class="success">+£12</h5>
+              <h3>£44.55</h3>
+            </div>
+          </div>
+          <div class="item fantasy">
+            <div class="icon">
+              <span class="material-symbols-rounded">account_balance</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>Fantasy Football</h3>
+                <small class="text-muted">Updated</small>
+              </div>
+              <h5 class="success">+£10</h5>
+              <h3>£40</h3>
+            </div>
+          </div>
+          <div class="item savings">
+            <div class="icon">
+              <span class="material-symbols-rounded">account_balance</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>Savings</h3>
+                <small class="text-muted">Updated</small>
+              </div>
+              <h5 class="warning">+£0</h5>
+              <h3>£0</h3>
+            </div>
+          </div>
+          <div class="item add-product">
+            <div>
+              <span class="material-symbols-rounded">add</span>
+              <h3>Add Bank account</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Scripts.js"></script>
+  </body>
+</html>
