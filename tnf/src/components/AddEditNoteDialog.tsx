@@ -45,41 +45,33 @@ const AddEditNoteDialog = ({
   return (
     <Modal show onHide={onDismiss}>
       <Modal.Header closeButton>
-        <Modal.Title>
-          {
-            noteToEdit ? "Edit Note" : "Add Note"
-          }</Modal.Title>
+        <Modal.Title>{noteToEdit ? "Edit Note" : "Add Note"}</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
+      <Form id="addEditNoteForm" onSubmit={handleSubmit(onSubmit)}>
+        <TextInputField
+          name="title"
+          label="Title"
+          type="text"
+          placeholder="Enter title"
+          register={register}
+          registerOptions={{ required: "Required" }}
+          error={errors.title}
+        />
 
         <TextInputField 
-        name="title"
-        label="Title"
-        type="text"
+        name="text"
+        label="Text"
+        as="textarea"
+        rows={5}
+        placeholder="Enter text"
+        register={register}        
         />
-        <Form id="addEditNoteForm" onSubmit={handleSubmit(onSubmit)}>
-          <Form.Group className="mb-3">
-            <Form.Label>Title</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter title"
-              isInvalid={!!errors.title}
-              {...register("title", { required: "Required" })}
-            />
-            <Form.Control.Feedback type="invalid">
-              {errors.title?.message}
-            </Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Label>Text</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={5}
-              placeholder="Enter text"
-              {...register("text")}
-            />
-          </Form.Group>
+
+ 
+          
+          
         </Form>
       </Modal.Body>
 

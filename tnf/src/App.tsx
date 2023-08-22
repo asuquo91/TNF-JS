@@ -9,6 +9,7 @@ import AddEditNoteDialog from "./components/AddEditNoteDialog";
 import styleUtils from "./styles/utils.module.css";
 import { FaPlus } from "react-icons/fa";
 import { set } from "react-hook-form";
+import SignUpModal from "./components/SignUpModal";
 
 function App() {
   const [notes, setNotes] = useState<NoteModel[]>([]);
@@ -103,6 +104,13 @@ function App() {
           }}
         />
       )}
+
+{ true &&
+  <SignUpModal 
+    onDismiss={() => {}}
+    onSignUpSuccessful={() => {}}
+  />}
+
     </Container>
   );
 }
