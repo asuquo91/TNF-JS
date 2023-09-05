@@ -1,3 +1,25 @@
 .homepagepic{
    height: 90vh;
 }
+
+.homepagepicmobile{
+   display: none;
+}
+
+@media (max-width: 1000px) {
+   .homepagepic{
+      display: block;
+      height: 80vw;
+   }
+}
+
+@media (max-width: 768px) {
+   .homepagepic{
+      display: none;
+   }
+   .homepagepicmobile{
+      display: block;
+      height: 100vh;
+   }
+}
+
