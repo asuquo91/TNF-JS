@@ -1,6 +1,11 @@
+import "../styles/homepage.css"
+
+
 const NotesPageLoggedOutView = () => {
     return ( 
-        <h2>Please login to see your notes</h2>
+        <>
+        <img className="homepagepic" src="/img/noters-homepage1.png" alt="Welcome to Noters.site" />
+        </>
      );
 }
  

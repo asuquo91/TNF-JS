@@ -20,7 +20,7 @@ const NavBar = ({
   return (
     <Navbar bg="primary" variant="dark" expand="sm" sticky="top">
       <Container>
-        <NavbarBrand as={Link} to="/">Noters App</NavbarBrand>
+        <NavbarBrand as={Link} to="/">Noters.site</NavbarBrand>
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar">
           <Nav>
